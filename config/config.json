@@ -1,0 +1,9 @@
+{
+  "development": {
+    "username": "root",
+    "password": "tmddyd",
+    "database": "yong_nara",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
