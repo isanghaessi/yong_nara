@@ -1,0 +1,22 @@
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#btn_back,
+div {
+	align-self: flex-start;
+}
+
+fieldset {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+legend {
+	font-weight: bolder;
+}

@@ -1,0 +1,32 @@
+doctype html
+
+html
+    head
+        title= 'join'
+    body
+        button(id='btn_back') back
+        h1 yong nara
+        h2 join us
+        br
+        form(id='form_join')
+            fieldset
+                legend regist your information
+                div
+                    label(for='id_input') ID: 
+                    input(type='text', id='input_id', name='input_id')
+                    button(id='btn_check_dup') duplicate check
+                div
+                    label(for='input_pw') PW: 
+                    input(type='text', id='input_pw', name='input_pw')
+                div
+                    label(for='input_name') name: 
+                    input(type='text', id='input_name', name='input_name')
+                div
+                    label(for='input_mail') e-mail: 
+                    input(type='text', id='input_mail', name='input_mail')
+                button(type='submit') join
+
+        link(rel='stylesheet', href='stylesheets/join_style.css')
+        script(src='https://unpkg.com/axios/dist/axios.min.js')
+        script(src='javascripts/join_script.js')
+    

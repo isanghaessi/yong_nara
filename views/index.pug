@@ -1,5 +1,29 @@
-extends layout
+doctype html
 
-block content
-  h1= title
-  p Welcome to #{title}
+html
+    head
+        title= 'yong nara'
+    body
+        h1 yong nara
+        h2 home
+        br
+        form(action='/login', method='post', id='login_form')
+            fieldset
+                legend welcome to yong nara
+                div
+                    label(for='id_input') ID: 
+                    input(type='text', id='id_input', name='id_input')
+                div
+                    label(for='pw_input') PW: 
+                    input(type='text', id='pw_input', name='pw_input')
+                div
+                    button(type='submit') login 
+        div
+            button(id='btn_find') find ID/PW
+            button(id='btn_join') join
+        div
+            button kakao login
+
+        link(rel='stylesheet', href='stylesheets/index_style.css')
+        script(src='https://unpkg.com/axios/dist/axios.min.js')
+        script(src='javascripts/index_script.js')
